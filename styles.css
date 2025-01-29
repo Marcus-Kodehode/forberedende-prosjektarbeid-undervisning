@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  gap: 8px;
+  padding: 50px 0;
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+.cardwrapper {
+  background-color: rgb(134, 80, 10);
+  padding: 30px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardTitle {
+  max-width: 300px;
+  text-align: center;
+  text-overflow: ellipsis;
+  max-height: 100px;
+  min-height: 81px;
+}
+
+.cardDescription {
+  min-height: 27px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
