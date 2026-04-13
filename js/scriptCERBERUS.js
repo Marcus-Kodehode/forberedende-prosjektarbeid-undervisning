@@ -14,5 +14,5 @@ if (titleCERBERUS && imgCERBERUSUrl && textCERBERUS && cardColorCERBERUS) {
   document.getElementById("cardCERBERUS").style.backgroundColor =
     cardColorCERBERUS;
 } else {
-  document.getElementById("imgCERBERUS").src = "./images/archangel.png";
+  document.getElementById("imgCERBERUS").src = "../images/archangel.png";
 }
