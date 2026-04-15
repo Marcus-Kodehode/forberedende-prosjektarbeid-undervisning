@@ -1,7 +1,7 @@
-const titleKRAKEN = "";
-const imgKRAKENUrl = "";
-const textKRAKEN = "";
-const cardColorKRAKEN = "";
+const titleKRAKEN = "Kraken";
+const imgKRAKENUrl = "/images/KRAKEN/kraken.png"
+const textKRAKEN = "The sea isn’t your escape… it’s my domain. Every wave carries your end closer";
+const cardColorKRAKEN = "darkblue";
 
 if (titleKRAKEN && imgKRAKENUrl && textKRAKEN && cardColorKRAKEN) {
   document.getElementById("titleKRAKEN").textContent = titleKRAKEN;
