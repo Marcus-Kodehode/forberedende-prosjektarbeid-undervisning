@@ -1,7 +1,7 @@
-const titleHYDRA = "";
-const imgHYDRAUrl = "";
-const textHYDRA = "";
-const cardColorHYDRA = "";
+const titleHYDRA = "HYDRA THE FIREHYDRANT";
+const imgHYDRAUrl = "/images/hydra.jpg";
+const textHYDRA = "xdddddddddddddddddddddddddddddd";
+const cardColorHYDRA = "black";
 
 if (titleHYDRA && imgHYDRAUrl && textHYDRA && cardColorHYDRA) {
   document.getElementById("titleHYDRA").textContent = titleHYDRA;
