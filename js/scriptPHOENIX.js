@@ -1,7 +1,7 @@
 const titlePHOENIX = "The Fire Phoenix";
 const imgPHOENIXUrl = "./images/Phoenix.jpg";
 const textPHOENIX = "Born from ashes, rising with eternal flames";
-const cardColorPHOENIX = "white";
+const cardColorPHOENIX = "darkred";
 
 if (titlePHOENIX && imgPHOENIXUrl && textPHOENIX && cardColorPHOENIX) {
   document.getElementById("titlePHOENIX").textContent = titlePHOENIX;
