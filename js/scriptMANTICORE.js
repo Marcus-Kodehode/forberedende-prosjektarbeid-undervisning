@@ -1,7 +1,7 @@
-const titleMANTICORE = "";
-const imgMANTICOREUrl = "";
-const textMANTICORE = "";
-const cardColorMANTICORE = "";
+const titleMANTICORE = "Master";
+const imgMANTICOREUrl = "images/MANTICORE/manticore.png";
+const textMANTICORE = "When everyone falls… I remain.";
+const cardColorMANTICORE = "darkred";
 
 if (titleMANTICORE && imgMANTICOREUrl && textMANTICORE && cardColorMANTICORE) {
   document.getElementById("titleMANTICORE").textContent = titleMANTICORE;
