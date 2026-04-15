@@ -1,7 +1,7 @@
-const titleCERBERUS = "";
-const imgCERBERUSUrl = "";
-const textCERBERUS = "";
-const cardColorCERBERUS = "";
+const titleCERBERUS = "Cerberus, Dreadhound";
+const imgCERBERUSUrl = "images/CERBERUS/cerberus.png";
+const textCERBERUS = "Three heads, one hunger; he stands as the final seal upon the gate of fire";
+const cardColorCERBERUS = "#1a0505";
 
 if (titleCERBERUS && imgCERBERUSUrl && textCERBERUS && cardColorCERBERUS) {
   document.getElementById("titleCERBERUS").textContent = titleCERBERUS;
