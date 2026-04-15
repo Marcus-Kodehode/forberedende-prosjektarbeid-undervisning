@@ -1,5 +1,5 @@
 const titleHYDRA = "HYDRA THE FIREHYDRANT";
-const imgHYDRAUrl = "/images/hydra.jpg";
+const imgHYDRAUrl = "./images/hydra.jpg";
 const textHYDRA = "xdddddddddddddddddddddddddddddd";
 const cardColorHYDRA = "black";
 
