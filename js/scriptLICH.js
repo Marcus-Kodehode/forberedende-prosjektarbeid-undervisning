@@ -1,5 +1,5 @@
-const titleLICH = "";
-const imgLICHUrl = "";
+const titleLICH = "Ditch The Lich";
+const imgLICHUrl = "/images/LICH/pngegg.png";
 const textLICH = "";
 const cardColorLICH = "";
 
