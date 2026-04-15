@@ -1,7 +1,7 @@
-const titleLEVIATHAN = "";
-const imgLEVIATHANUrl = "";
-const textLEVIATHAN = "";
-const cardColorLEVIATHAN = "";
+const titleLEVIATHAN = "Leviathan";
+const imgLEVIATHANUrl = "/images/LEVIATHAN/Leviathan.png";
+const textLEVIATHAN = "Ancient sea titan Leviathan crushes foes with tidal fury from the abyss";
+const cardColorLEVIATHAN = "#1A2A6C";
 
 if (titleLEVIATHAN && imgLEVIATHANUrl && textLEVIATHAN && cardColorLEVIATHAN) {
   document.getElementById("titleLEVIATHAN").textContent = titleLEVIATHAN;
