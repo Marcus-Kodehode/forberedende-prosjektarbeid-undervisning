@@ -27,7 +27,7 @@ const monsters = [
   "MEDUSA", //* Raffica
   "OGRE",
   "ORC",
-  "PEGASUS",
+  "PEGASUS", //* Skage!!!!
   "SATYR",
   "SPHINX",
   "TROLL",
