@@ -1,30 +1,30 @@
 //! IKKE RØR
 
 const monsters = [
-  "CERBERUS",
-  "CHIMERA",
-  "DRAGON",
-  "FENRIR",
-  "GRIFFIN",
-  "KRAKEN",
-  "MINOTAUR",
-  "SHISHAN",
-  "PHOENIX",
-  "KITSUNE",
-  "BASILISK",
-  "BEHEMOTH",
-  "CENTAUR",
-  "CYCLOPS",
-  "DJINN",
-  "ELEMENTAL",
-  "GARGOYLE",
-  "GOLEM",
-  "HARPY",
-  "HYDRA",
-  "LEVIATHAN",
-  "LICH",
-  "MANTICORE",
-  "MEDUSA",
+  "CERBERUS", //* Jesper
+  "CHIMERA", //* Wolfgang
+  "DRAGON", //* John
+  "FENRIR", //* Shadi
+  "GRIFFIN", //* Bartek
+  "KRAKEN", //* Anna
+  "MINOTAUR", //* Elias
+  "SHISHAN", //* Skage
+  "PHOENIX", //* Shuqun
+  "KITSUNE", //* Senbet
+  "BASILISK", //* Lany
+  "BEHEMOTH", //* Semiramis
+  "CENTAUR", //* Lu
+  "CYCLOPS", //* Vilde
+  "DJINN", //* Desireè
+  "ELEMENTAL", //* Martin
+  "GARGOYLE", //*Runar
+  "GOLEM", //* Fredrik
+  "HARPY", //* Morten
+  "HYDRA", //* Senad
+  "LEVIATHAN", //* Andrè
+  "LICH", //* Bo
+  "MANTICORE", //* Mariia
+  "MEDUSA", //* Raffica
   "OGRE",
   "ORC",
   "PEGASUS",
