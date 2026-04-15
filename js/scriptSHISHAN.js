@@ -1,4 +1,7 @@
-const textSHISHAN = "I am the one and only";
+const titleSHISHAN = "Willow the master";
+const imgSHISHANUrl = "/images/SHISHAN/Barberian.png";
+const textSHISHAN =
+  "I am the one and this length of text is ok to have, is that ok yo?";
 const cardColorSHISHAN = "darkred";
 
 if (titleSHISHAN && imgSHISHANUrl && textSHISHAN && cardColorSHISHAN) {
@@ -11,7 +14,8 @@ if (titleSHISHAN && imgSHISHANUrl && textSHISHAN && cardColorSHISHAN) {
   document.getElementById("imgSHISHAN").src = "./images/archangel.png";
 }
 
-// const titleSHISHAN = "Willow the master of all things code";
+// const titleSHISHAN = "Willow the master";
 // const imgSHISHANUrl = "/images/SHISHAN/Barberian.png";
-// const textSHISHAN = "I am the one and only";
+// const textSHISHAN =
+//   "I am the one and this length of text is ok to have, is that ok yo?";
 // const cardColorSHISHAN = "darkred";
