@@ -1,5 +1,5 @@
 const titleLICH = "Ditch The Lich";
-const imgLICHUrl = "/images/LICH/pngegg.png";
+const imgLICHUrl = "/images/LICH/Lich2.png";
 const textLICH = "From the school of running heroically away from danger";
 const cardColorLICH = "Green";
 
