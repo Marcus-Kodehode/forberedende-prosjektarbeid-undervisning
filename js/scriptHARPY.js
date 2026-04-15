@@ -1,6 +1,6 @@
 const titleHARPY = "Harpy Queen";
 const imgHARPYUrl = "/images/Harpy/HarpyQueen.png";
-const textHARPY = "Merciless wrath that devours all who dare rise beneath her shadow...";
+const textHARPY = "Merciless wrath that devours all who dare rise beneath her shadow";
 const cardColorHARPY = "#8A0303";
 
 if (titleHARPY && imgHARPYUrl && textHARPY && cardColorHARPY) {
