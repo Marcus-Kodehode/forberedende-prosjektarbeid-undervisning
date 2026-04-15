@@ -8,7 +8,7 @@ const monsters = [
   "GRIFFIN", //* Bartek
   "KRAKEN", //* Anna
   "MINOTAUR", //* Elias
-  "SHISHAN", //* Skage
+  "SHISHAN", //* Joakim
   "PHOENIX", //* Shuqun
   "KITSUNE", //* Senbet
   "BASILISK", //* Lany
@@ -27,7 +27,7 @@ const monsters = [
   "MEDUSA", //* Raffica
   "OGRE",
   "ORC",
-  "PEGASUS",
+  "PEGASUS", //* Skage!!!!
   "SATYR",
   "SPHINX",
   "TROLL",
