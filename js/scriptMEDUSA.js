@@ -1,4 +1,4 @@
-const titleMEDUSA = "Medusa";
+const titleMEDUSA = "Stone Gaze Medusa";
 const imgMEDUSAUrl = "images/MEDUSA/medusa.png";
 const textMEDUSA = "A mythical Gorgon from Greek mythology with snakes for hair, whose gaze turns people to stone.";
 const cardColorMEDUSA = "#8B0000";
