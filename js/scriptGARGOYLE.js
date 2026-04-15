@@ -1,7 +1,7 @@
-const titleGARGOYLE = "";
-const imgGARGOYLEUrl = "";
-const textGARGOYLE = "";
-const cardColorGARGOYLE = "";
+const titleGARGOYLE = "Gargle, the Watcher";
+const imgGARGOYLEUrl = "/images/GARGOYLE/gargoyle.jpg";
+const textGARGOYLE = "By day, cold stone. By night, hunger. Sleep well";
+const cardColorGARGOYLE = "darkslategray";
 
 if (titleGARGOYLE && imgGARGOYLEUrl && textGARGOYLE && cardColorGARGOYLE) {
   document.getElementById("titleGARGOYLE").textContent = titleGARGOYLE;
