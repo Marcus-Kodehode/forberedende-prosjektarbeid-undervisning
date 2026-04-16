@@ -1,7 +1,7 @@
-const titleKITSUNE = "";
-const imgKITSUNEUrl = "";
-const textKITSUNE = "";
-const cardColorKITSUNE = "";
+const titleKITSUNE = "Nocturne Kitsune";
+const imgKITSUNEUrl = "./images/KITSUNE/kitsune.png";
+const textKITSUNE = "Rawr Stay away";
+const cardColorKITSUNE = "#0d265a";
 
 if (titleKITSUNE && imgKITSUNEUrl && textKITSUNE && cardColorKITSUNE) {
   document.getElementById("titleKITSUNE").textContent = titleKITSUNE;
@@ -10,5 +10,5 @@ if (titleKITSUNE && imgKITSUNEUrl && textKITSUNE && cardColorKITSUNE) {
   document.getElementById("cardKITSUNE").style.backgroundColor =
     cardColorKITSUNE;
 } else {
-  document.getElementById("imgKITSUNE").src = "./images/archangel.png";
+  document.getElementById("imgKITSUNE").src = imgKITSUNEUrl;
 }
