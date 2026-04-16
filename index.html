@@ -2,20 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="styles.css" />
-    <script
-      src="./js/script.js"
-      defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your Fighter!</title>
+    <link rel="icon" href="./favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Firebase compat CDN (ingen build-steg nødvendig) -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+    <script src="./js/data.js" defer></script>
+    <script src="./js/leaderboard.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </head>
 
-  <body>
-    <h1>Choose your figher!</h1>
-    <div class="container"></div>
+  <body class="min-h-screen bg-[#0a0a0f] text-white flex flex-col items-center gap-10 py-14 px-6">
+
+    <!-- ── SELECTION SCREEN ───────────────────────────────────────── -->
+    <section id="selection-screen" class="w-full flex flex-col items-center gap-10">
+
+      <!-- Header -->
+      <div class="flex flex-col items-center gap-2">
+        <p class="text-xs tracking-[0.4em] uppercase text-white/40">Welcome to the arena</p>
+        <h1 class="text-5xl font-black tracking-widest uppercase text-amber-400 drop-shadow-[0_0_20px_rgba(251,191,36,0.4)]">
+          Choose your Fighter!
+        </h1>
+        <div class="h-px w-48 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent mt-1"></div>
+        <p class="text-xs text-white/30 mt-2">Klikk på en fighter for å starte kamp</p>
+      </div>
+
+      <!-- Nav buttons -->
+      <div class="flex gap-3">
+        <button
+          id="open-register-btn"
+          class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-black text-sm font-bold transition-all"
+        >
+          🏆 Registrer deg
+        </button>
+        <button
+          id="open-leaderboard-btn"
+          class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-bold border border-white/10 hover:border-white/30 transition-all"
+        >
+          📋 Leaderboard
+        </button>
+      </div>
+
+      <!-- Card grid -->
+      <div
+        class="container grid gap-5 w-full max-w-7xl"
+        style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))"
+      ></div>
+    </section>
+
+    <!-- ── BATTLE SCREEN ──────────────────────────────────────────── -->
+    <section id="battle-screen" class="hidden w-full flex flex-col items-center gap-0">
+    </section>
+
+    <!-- ── LEADERBOARD PANEL ──────────────────────────────────────── -->
+    <section
+      id="leaderboard-panel"
+      class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
+    >
+      <div class="bg-[#0f0f1a] border border-white/10 rounded-2xl w-full max-w-lg shadow-2xl flex flex-col overflow-hidden">
+        <div class="flex justify-between items-center px-6 py-4 border-b border-white/10">
+          <h2 class="text-xl font-black tracking-wider text-amber-400">🏆 Leaderboard</h2>
+          <button id="close-leaderboard-btn" class="text-white/40 hover:text-white text-2xl leading-none transition-colors">&times;</button>
+        </div>
+        <div id="leaderboard-list" class="flex flex-col divide-y divide-white/5 overflow-y-auto max-h-96">
+          <!-- Fylles av leaderboard.js -->
+          <p class="text-center text-white/30 text-sm py-10">Laster leaderboard...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REGISTER MODAL ─────────────────────────────────────────── -->
+    <section
+      id="register-modal"
+      class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
+    >
+      <div class="bg-[#0f0f1a] border border-white/10 rounded-2xl w-full max-w-sm shadow-2xl flex flex-col overflow-hidden">
+        <div class="flex justify-between items-center px-6 py-4 border-b border-white/10">
+          <h2 class="text-xl font-black tracking-wider text-amber-400">Registrer deg</h2>
+          <button id="close-register-btn" class="text-white/40 hover:text-white text-2xl leading-none transition-colors">&times;</button>
+        </div>
+        <form id="register-form" class="flex flex-col gap-4 p-6">
+          <div class="flex flex-col gap-1">
+            <label class="text-xs uppercase tracking-wider text-white/50">Kallenavn</label>
+            <input
+              id="register-name"
+              type="text"
+              maxlength="20"
+              placeholder="f.eks. ShadowKiller99"
+              class="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-white placeholder:text-white/20 focus:outline-none focus:border-amber-400/50 transition-colors"
+              required
+            />
+          </div>
+          <p id="register-error" class="text-red-400 text-xs hidden"></p>
+          <button
+            type="submit"
+            class="py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold transition-all"
+          >
+            Lagre
+          </button>
+        </form>
+        <div id="register-success" class="hidden px-6 pb-6 flex flex-col items-center gap-2 text-center">
+          <p class="text-2xl">✅</p>
+          <p class="text-white font-bold">Registrert!</p>
+          <p id="register-success-msg" class="text-white/50 text-sm"></p>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
