@@ -44,7 +44,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "CHIMERA", name: "Chimæra", img: "./images/SHISHAN/chimera.png", description: "En fyrst med løvens kropp og skorpions hale", color: "#2a1a1a",
+    id: "CHIMERA", name: "Chimæra", img: "./images/SHISHAN/chimera.png", description: "Løve foran, geit i midten, slange bak — satt sammen på en fredag", color: "#4a1a0a",
     hp: 85,
     attacks: [
       { name: "Fire Breath",    damage: 25, flavor: "Flammer fra løvens gap" },
@@ -52,7 +52,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "CYCLOPS", name: "Cyclops", img: "./images/SHISHAN/cyclops.png", description: "En enkeltøyd gigant", color: "#2a1a1a",
+    id: "CYCLOPS", name: "Cyclops", img: "./images/SHISHAN/cyclops.png", description: "Synskorrigering er dyrt når du bare har ett øye — men en neve er billig", color: "#3a2a10",
     hp: 115,
     attacks: [
       { name: "Boulder Hurl", damage: 30, flavor: "Et fjell kastet som en stein" },
@@ -60,7 +60,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "DEMON", name: "Demon", img: "./images/SHISHAN/demon.png", description: "En fyrst fra helvete", color: "#2a0808",
+    id: "DEMON", name: "Demon", img: "./images/SHISHAN/demon.png", description: "Helvetes janitor — tar seg av det skitne arbeidet ingen andre vil gjøre", color: "#3a0505",
     hp: 90,
     attacks: [
       { name: "Soul Rend",      damage: 25, flavor: "River sjelen ut av kroppen" },
@@ -68,7 +68,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "DEVIL", name: "Devil", img: "./images/SHISHAN/devil.png", description: "En fyrst fra helvete", color: "#2a0808",
+    id: "DEVIL", name: "Devil", img: "./images/SHISHAN/devil.png", description: "Sjefen i helvete — har en kontrakt du aldri burde skrevet under på", color: "#5a0808",
     hp: 95,
     attacks: [
       { name: "Eternal Flame",   damage: 28, flavor: "En flamme som aldri slukner" },
@@ -220,7 +220,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "ORC", name: "Orc", img: "./images/SHISHAN/orc.png", description: "", color: "",
+    id: "ORC", name: "Orc", img: "./images/SHISHAN/orc.png", description: "Kriger med ett humør: sint — og ett verktøy: øks", color: "#2a3a0a",
     hp: 100,
     attacks: [
       { name: "Berserker Axe", damage: 30, flavor: "Raser uten frykt" },
@@ -228,7 +228,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "PEGASUS", name: "Pegasus", img: "./images/SHISHAN/pegasus.png", description: "", color: "",
+    id: "PEGASUS", name: "Pegasus", img: "./images/SHISHAN/pegasus.png", description: "Hest med vinger og et ego på størrelse med himmelen den flyr i", color: "#1a3a5a",
     hp: 85,
     attacks: [
       { name: "Thunder Hoof", damage: 24, flavor: "Lynet følger hvert steg" },
@@ -252,7 +252,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "SHISHAN", name: "Willow the Imp", img: "./images/SHISHAN/barberian.png", description: "I am the one and this length of text is ok to have, is that ok yo?", color: "darkred",
+    id: "SHISHAN", name: "Willow the master", img: "./images/SHISHAN/barberian.png", description: "Ankomst alltid dramatisk, exit alltid episk — spør bare ham selv", color: "darkred",
     hp: 95,
     attacks: [
       { name: "Barbarian Roar",   damage: 28, flavor: "Et brøl som knuser viljen" },
@@ -268,7 +268,7 @@ const MONSTERS = [
     ],
   },
   {
-    id: "TROLL", name: "Troll", img: "./images/SHISHAN/troll.png", description: "", color: "",
+    id: "TROLL", name: "Troll", img: "./images/SHISHAN/troll.png", description: "Bor under broen, liker ikke morgenfolk — eller folk generelt", color: "#1a3a10",
     hp: 115,
     attacks: [
       { name: "Rock Toss",        damage: 22, flavor: "Stein stor som et hus" },
@@ -321,6 +321,53 @@ const MONSTERS = [
     attacks: [
       { name: "Undead Bite",    damage: 20, flavor: "Infeksjon sprer seg øyeblikkelig" },
       { name: "Shamble Crush",  damage: 14, flavor: "Sakte men uunngåelig" },
+    ],
+  },
+
+  // ── Obskure skapninger ────────────────────────────────────────────────────
+  {
+    // Orcadian/Norse: hudfri hestedemon med giftig pust. En av mytologiens mest grusomme skapninger.
+    id: "NUCKELAVEE", name: "Nuckelavee", img: "./images/SHISHAN/nuckelavee.png", description: "Orcadisk hestedemon uten hud — pesten følger overalt den trer", color: "#3a0505",
+    hp: 110,
+    attacks: [
+      { name: "Pestilent Breath", damage: 30, flavor: "Pesten sprer seg før du rekker å løpe" },
+      { name: "Flayed Charge",    damage: 25, flavor: "Ingen hud, ingen grenser, ingen nåde" },
+    ],
+  },
+  {
+    // Japansk: et 15 meter høyt skjelett bygget av beinene til sultne krigere som døde uten begravelse.
+    id: "GASHADOKURO", name: "Gashadokuro", img: "./images/SHISHAN/gashadokuro.png", description: "Et 15m skjelett av sultne krigsdøde — og det er sulten igjen", color: "#151515",
+    hp: 140,
+    attacks: [
+      { name: "Bone Crunch",   damage: 35, flavor: "Bitt av et kjempeskjelett — og du hørtes ikke" },
+      { name: "Death Rattle",  damage: 20, flavor: "Skranglelyden varsler intet godt" },
+    ],
+  },
+  {
+    // Japansk: edderkopp som forvandler seg til en vakker kvinne for å lokke menn i fellen.
+    id: "JOROGUMO", name: "Jorogumo", img: "./images/SHISHAN/jorogumo.png", description: "Halvt vakker kvinne, halvt edderkopp — hundre prosent farlig", color: "#2a0a3a",
+    hp: 85,
+    attacks: [
+      { name: "Web Trap",    damage: 20, flavor: "Ingen rømmer fra silkenettene" },
+      { name: "Venom Kiss",  damage: 28, flavor: "Det siste du husker er smilet" },
+    ],
+  },
+  {
+    // Algonkin/Cree: et iskaldt kannibalvesen — mennesker som spiste mennesker ble forvandlet til dette.
+    id: "WENDIGO", name: "Wendigo", img: "./images/SHISHAN/wendigo.png", description: "Isandedets kannibalånd — du hørte aldri den komme", color: "#0a1a2a",
+    hp: 100,
+    attacks: [
+      { name: "Frostbite Claw", damage: 26, flavor: "Kulden setter seg i beina før slaget" },
+      { name: "Hunger Howl",    damage: 20, flavor: "Alltid sulten — aldri fornøyd" },
+    ],
+  },
+  {
+    // Japansk: tapir-lignende vesen som spiser mareritt. Ber du det om hjelp, kan det ta litt mer enn meningen.
+    id: "BAKU", name: "Baku", img: "./images/SHISHAN/baku.png", description: "Spiser mareritt til frokost — og sjelen din hvis du ber for høflig", color: "#2a1a3a",
+    hp: 75,
+    attacks: [
+      { name: "Nightmare Feast", damage: 24, flavor: "Spiser drømmene dine — og litt av sjelen din" },
+      { name: "Dream Crush",     damage: 18, flavor: "Virkeligheten er verre enn mareritten" },
     ],
   },
 ];

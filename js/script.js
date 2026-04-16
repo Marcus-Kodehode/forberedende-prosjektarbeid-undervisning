@@ -1,4 +1,8 @@
 const LOGOS = ["./images/logo1.png", "./images/logo2.png"];
+const LOGO_LINKS = [
+  "https://aurnor-main-p6rlgb.laravel.cloud/",
+  "https://mobodigital.vercel.app/",
+];
 
 const selectionScreen = document.getElementById("selection-screen");
 const battleScreen    = document.getElementById("battle-screen");
@@ -12,13 +16,21 @@ MONSTERS.forEach((monster, index) => {
   const { id, name, img, description, color } = monster;
   const filled = name && img && description && color;
 
+  const logoIndex = index % 2;
+  const isLogoCard = !filled && !img; // har bilde men ikke full data = partial, uten bilde = logo
+
   const card = document.createElement("div");
   card.className = [
     "group relative flex flex-col items-center gap-3 p-4 rounded-2xl",
     "border border-white/10 transition-all duration-300",
-    filled
-      ? "cursor-pointer hover:scale-105 hover:border-amber-400/40 hover:shadow-2xl hover:shadow-black/80"
+    filled || isLogoCard
+      ? "cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-black/80"
       : "cursor-default",
+    filled
+      ? "hover:border-amber-400/40"
+      : isLogoCard
+        ? "hover:border-white/30"
+        : "",
   ].join(" ");
   card.style.backgroundColor = filled ? color : "#111827";
 
@@ -26,6 +38,11 @@ MONSTERS.forEach((monster, index) => {
     const badge = document.createElement("div");
     badge.className = "absolute inset-0 flex items-center justify-center rounded-2xl bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-amber-400 font-bold text-sm tracking-wider";
     badge.textContent = "⚔️ KJEMPE!";
+    card.appendChild(badge);
+  } else if (isLogoCard) {
+    const badge = document.createElement("div");
+    badge.className = "absolute inset-0 flex items-center justify-center rounded-2xl bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white/70 font-bold text-xs tracking-wider px-2 text-center";
+    badge.textContent = logoIndex === 0 ? "🔗 aurnor.no" : "🔗 mobodigital.no";
     card.appendChild(badge);
   }
 
@@ -42,7 +59,11 @@ MONSTERS.forEach((monster, index) => {
   desc.className = `text-xs text-center italic min-h-8 ${filled ? "text-white/90" : "text-white/30"}`;
   desc.textContent = filled ? `"${description}!"` : "???";
 
-  if (filled) card.addEventListener("click", () => startBattle(monster));
+  if (filled) {
+    card.addEventListener("click", () => startBattle(monster));
+  } else if (isLogoCard) {
+    card.addEventListener("click", () => window.open(LOGO_LINKS[logoIndex], "_blank"));
+  }
 
   card.append(title, image, desc);
   container.appendChild(card);
