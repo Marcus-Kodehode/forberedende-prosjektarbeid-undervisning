@@ -40,7 +40,7 @@ const monsters = [
   "ANGEL",
   "DEMON",
   "DEVIL",
-  "IMP",
+  "IMP", //* Magnus,
 ];
 
 const container = document.querySelector(".container");
