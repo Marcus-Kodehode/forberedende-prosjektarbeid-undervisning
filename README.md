@@ -108,7 +108,7 @@ Ingenting betyr noe. Alle rangeres.
 
 ## 🎭 DJINN
 
-DJINN er læreren vår.
+DJINN er en merkelig skapning.
 
 Hans angrep:
 - **`git push --force`** *(42 skade)* — *"Overskriver reglene — og alt annet!"*
