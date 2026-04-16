@@ -8,7 +8,7 @@ Et klasse-prosjekt som ble tatt for langt. Ingen angrer.
 
 ## 🧐 Hva er dette?
 
-Et Pokémon-inspirert monster-kortspill med turn-based kamper, Firebase-leaderboard og en DJINN-karakter som er et usminkert portrett av læreren vår.
+Et Pokémon-inspirert monster-kortspill med turn-based kamper, Firebase-leaderboard.
 
 Prosjektet startet som en enkel "vis kort på en side"-oppgave. Det er ikke lenger det.
 
